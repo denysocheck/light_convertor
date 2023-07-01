@@ -37,6 +37,10 @@ window = tk.Tk()
 window.title("Конвертор валют")
 window.geometry("300x250")
 
+window.image = PhotoImage(file='bg/rain.png')
+bg=Label(window, image=window.image)
+bg.grid(row=0, column=0)
+
 # Написи та поля вводу
 amount_label = tk.Label(window, text="Сума:")
 amount_label.pack()
